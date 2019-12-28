@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pnml>
+<net id="workflownet" type="http://www.informatik.hu-berlin.de/top/pnml/basicPNML.rng">
+    <place id="place_a">
+        <graphics>
+            <position x="342" y="54" />
+            <dimension x="13" y="13" />
+        </graphics>
+        <name>
+            <text>pa</text>
+         </name>
+    </place>
+    <place id="place_b">
+        <graphics>
+            <position x="98" y="18" />
+            <dimension x="13" y="13" />
+        </graphics>
+        <name>
+            <text>pb</text>
+         </name>
+    </place>
+    <place id="place_c">
+        <graphics>
+            <position x="428" y="72" />
+            <dimension x="13" y="13" />
+        </graphics>
+        <name>
+            <text>pc</text>
+         </name>
+    </place>
+    <place id="place_d">
+        <graphics>
+            <position x="514" y="54" />
+            <dimension x="13" y="13" />
+        </graphics>
+        <name>
+            <text>pd</text>
+         </name>
+    </place>
+    <transition id="trans_0">
+        <graphics>
+            <position  x="302" y="71" />
+            <dimension x="22" y="17" />
+        </graphics>
+        <name>
+            <text>0</text>
+         </name>
+        <toolspecific tool="ProM" version="5.2">
+            <logevent>
+                <name>0</name>
+                <type>auto</type>
+            </logevent>
+        </toolspecific>
+    </transition>
+    <transition id="trans_1">
+        <graphics>
+            <position  x="302" y="37" />
+            <dimension x="20" y="17" />
+        </graphics>
+        <name>
+            <text>1</text>
+         </name>
+        <toolspecific tool="ProM" version="5.2">
+            <logevent>
+                <name>1</name>
+                <type>auto</type>
+            </logevent>
+        </toolspecific>
+    </transition>
+    <transition id="trans_2">
+        <graphics>
+            <position  x="142" y="18" />
+            <dimension x="20" y="17" />
+        </graphics>
+        <name>
+            <text>2</text>
+         </name>
+        <toolspecific tool="ProM" version="5.2">
+            <logevent>
+                <name>2</name>
+                <type>auto</type>
+            </logevent>
+        </toolspecific>
+    </transition>
+    <transition id="trans_3">
+        <graphics>
+            <position  x="474" y="72" />
+            <dimension x="22" y="17" />
+        </graphics>
+        <name>
+            <text>3</text>
+         </name>
+        <toolspecific tool="ProM" version="5.2">
+            <logevent>
+                <name>3</name>
+                <type>auto</type>
+            </logevent>
+        </toolspecific>
+    </transition>
+    <transition id="trans_4">
+        <graphics>
+            <position  x="382" y="72" />
+            <dimension x="20" y="17" />
+        </graphics>
+        <name>
+            <text>4</text>
+         </name>
+        <toolspecific tool="ProM" version="5.2">
+            <logevent>
+                <name>4</name>
+                <type>auto</type>
+            </logevent>
+        </toolspecific>
+    </transition>
+	<transition id="trans_5">
+        <graphics>
+            <position  x="382" y="72" />
+            <dimension x="20" y="17" />
+        </graphics>
+        <name>
+            <text>5</text>
+         </name>
+        <toolspecific tool="ProM" version="5.2">
+            <logevent>
+                <name>5</name>
+                <type>auto</type>
+            </logevent>
+        </toolspecific>
+    </transition>
+    <arc id="arc_0" source="place_a" target="trans_0">
+    </arc>
+    <arc id="arc_1" source="trans_0" target="place_b">
+    </arc>
+    <arc id="arc_2" source="place_b" target="trans_1">
+    </arc>
+	<arc id="arc_3" source="trans_1" target="place_c">
+    </arc>
+	<arc id="arc_4" source="place_c" target="trans_2">
+    </arc>
+    <arc id="arc_5" source="trans_2" target="place_b">
+    </arc>
+	<arc id="arc_6" source="place_c" target="trans_3">
+    </arc>
+    <arc id="arc_7" source="trans_3" target="place_b">
+    </arc>
+	<arc id="arc_8" source="place_c" target="trans_4">
+    </arc>
+    <arc id="arc_9" source="trans_4" target="place_b">
+    </arc>
+	<arc id="arc_10" source="place_c" target="trans_5">
+    </arc>
+    <arc id="arc_11" source="trans_5" target="place_d">
+    </arc>
+</net>
+</pnml>
